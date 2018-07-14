@@ -8,11 +8,11 @@
 
 #### 	增减数量图
 
-![1531537390667](C:\Users\罗楠\AppData\Local\Temp\1531537390667.png)
+![](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/Images/change.png)
 
 #### 	具体情况输出 
 
-![1531537740802](C:\Users\罗楠\AppData\Local\Temp\1531537740802.png)
+![](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/Images/changedetails.png)
 
 ### 2.生成群成员三图（地区分布图、签名词云图、性别比例图）
 
@@ -20,19 +20,19 @@
 
 
 
-![1531538094192](C:\Users\罗楠\AppData\Local\Temp\1531538094192.png)
+![](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/Images/reigon.png)
 
 #### 	群成员签名词云图 
 
 
 
-![1531538209722](C:\Users\罗楠\AppData\Local\Temp\1531538209722.png)
+![](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/Images/cloud.png)
 
 #### 	群成员性别比例图
 
 
 
-![1531538261173](C:\Users\罗楠\AppData\Local\Temp\1531538261173.png)
+![](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/Images/sex.png)
 
 ## 使用说明
 
