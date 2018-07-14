@@ -40,6 +40,14 @@
 
 基于`python3.6`环境开发，使用了微信端第三方 Api 库`itchat`，echarts 的 python 接口库`pyecharts`， 分词库`jieba`，以及其他一些在程序工作中要用到了编解码、存储等库。
 
+安装方法：
+
+```
+pip install itchat
+pip install pyecharts
+pip install jieba
+```
+
 此分析器包含两个 python 程序，分别为 getLatestData.py 和 analyzeData.py 。
 
 getLatestData.py 用于对指定的群列表获取最新的群成员信息，并写入文件保存。
