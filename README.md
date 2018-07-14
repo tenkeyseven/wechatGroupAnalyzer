@@ -1,0 +1,96 @@
+# 			                                    微信群分析器
+
+`python 3.6`  `itchat`  `pyecharts`  `jieba`                                                                         [Github源代码地址](https://github.com/tenkeyseven/wechatGroupAnalyzer)
+
+##  实现功能
+
+### 1.群聊人员增减分析
+
+#### 	增减数量图
+
+![1531537390667](C:\Users\罗楠\AppData\Local\Temp\1531537390667.png)
+
+#### 	具体情况输出 
+
+![1531537740802](C:\Users\罗楠\AppData\Local\Temp\1531537740802.png)
+
+### 2.生成群成员三图（地区分布图、签名词云图、性别比例图）
+
+#### 	地区分布图
+
+
+
+![1531538094192](C:\Users\罗楠\AppData\Local\Temp\1531538094192.png)
+
+#### 	群成员签名词云图 
+
+
+
+![1531538209722](C:\Users\罗楠\AppData\Local\Temp\1531538209722.png)
+
+#### 	群成员性别比例图
+
+
+
+![1531538261173](C:\Users\罗楠\AppData\Local\Temp\1531538261173.png)
+
+## 使用说明
+
+基于`python3.6`环境开发，使用了微信端第三方 Api 库`itchat`，echarts 的 python 接口库`pyecharts`， 分词库`jieba`，以及其他一些在程序工作中要用到了编解码、存储等库。
+
+此分析器包含两个 python 程序，分别为 getLatestData.py 和 analyzeData.py 。
+
+getLatestData.py 用于对指定的群列表获取最新的群成员信息，并写入文件保存。
+
+analyzeData.py 用于对指定的群列表进行分析，输出群成员变化细则、群成员人数增减图和三图（群成员分布图、群成员签名云图和群成员性别比例图）
+
+### 使用流程
+
+1. 在手机上确定要分析的群聊，点开设置，将群聊保存至通讯录(Save to Contacts)。
+2. 运行 getLatestData.py，第一次登陆，会弹出二维码，使用手机扫码登陆微信网页版，并确认，之后登陆只需要在手机确认即可。
+3. 程序将会自动生成文件夹result，并将原始数据保存至此。
+4. 运行 analyzeData.py，程序将会对数据进行分析，输出分许结果以及生成相应的图。
+
+### 参数说明 
+
+在 getLatestData.py 中，只需要在 GroupList 列表中添加需要获取数据的群聊即可
+
+```python
+#getLatestData.py
+if __name__ == '__main__':
+
+	GroupList = ['测试','计算机网络2018']
+	init()
+	mainWork(introduce(GroupList = GroupList))
+```
+
+
+
+在 analyzeData.py 中，参数设置应如下
+
+```python
+#analyzeData.py
+if __name__ == '__main__':
+	'''在GroupList中添加需要分析的群名
+	   在main函数中相应添加True/False值来确定是否要进行绘制 地理分布图、词云图和性别饼图
+	   三个值默认都为True
+	   对群成员的分析默认进行绘图。
+	'''
+	GrouppList = ['测试','计算机网络2018']
+	main(
+		GrouppList,
+		Map = False,      #True 或 默认 为开启画图
+		Cloud = False,    
+		Pie = False       
+	)
+```
+
+### 其他
+
+对群成员人数增减进行分析依赖于多次采集的数据，而绘制三图相对不受人员变化影响，所以可以在第一次三图绘制好之后，将其设置为False，每次分析数据只分析人员变化。
+
+### 参考内容
+
++ [pyecharts](https://github.com/pyecharts/pyecharts)
++ [itchat](https://github.com/littlecodersh/ItChat)
++ [CSDN:利用itchat接口进行微信好友数据分析](https://blog.csdn.net/alicelmx/article/details/80862340)
