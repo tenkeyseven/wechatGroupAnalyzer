@@ -12,7 +12,9 @@
 
 #### 	具体情况输出 
 
-![](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/Images/changedetails.png)
+<div align="center">
+<img src="https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/Images/changedetails.png"></img>
+</div>
 
 ### 2.生成群成员三图（地区分布图、签名词云图、性别比例图）
 
