@@ -1,4 +1,4 @@
-# 			                                    微信群分析器
+﻿#  微信群分析器
 
 `python 3.6`  `itchat`  `pyecharts`  `jieba`                                 
 
