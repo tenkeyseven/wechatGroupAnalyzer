@@ -1,6 +1,6 @@
 # 			                                    微信群分析器
 
-`python 3.6`  `itchat`  `pyecharts`  `jieba`                                                                         [Github源代码地址](https://github.com/tenkeyseven/wechatGroupAnalyzer)
+`python 3.6`  `itchat`  `pyecharts`  `jieba`                                 
 
 ##  实现功能
 
