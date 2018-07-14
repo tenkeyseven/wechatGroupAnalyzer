@@ -300,7 +300,7 @@ if __name__ == '__main__':
 	GrouppList = ['pyecharts 可视化交流群','测试','计算机网络2018']
 	main(
 		GrouppList,
-		Map = False,
-		Cloud = False,
-		Pie = False
+		Map = True,      #True 或 默认 为开启画图，False为不开启
+		Cloud = True,    
+		Pie = True  
 	)

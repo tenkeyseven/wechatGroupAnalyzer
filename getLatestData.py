@@ -6,7 +6,7 @@ import json
 import datetime
 import os
 
-def introduce(GroupList):
+def introduce():
 	intro = '''
 welcome to use this program to know your wechat groups
 we can use this program to
@@ -16,14 +16,9 @@ we can use this program to
 PLEASE MAKE SURE THAT YOU SAVE THIS GROUPCHAT TO YOUR CONTACT
 	'''
 	print(intro)
-	intro_getChatRoom = 'pleae input the amounts of groups you want to know'
-
-	user_chatRoomList = GroupList
-
 	intro_begin = 'OK, program is ready to work, this may take a little while.\n'
 	print(intro_begin)
 
-	return user_chatRoomList
 
 def saveFiles(friendsList):
     outputFile = './result/records.json'
@@ -81,9 +76,15 @@ def init():
 	else:
 		saveFiles(init_list)
 
-def mainWork(chatRoomList):
+def mainWork(chatRoomList,login):
 
-	itchat.auto_login(hotReload = True)
+	if login == 'auto':
+		itchat.auto_login(hotReload = True)
+	elif login == 'single':
+		ichat.login()
+	else:
+		print("[Stopped] plz input correct login command")
+		return
 
 	for chatRoomName in chatRoomList:
 		searchedChatRoomList = itchat.search_chatrooms(chatRoomName)
@@ -106,9 +107,18 @@ def mainWork(chatRoomList):
 			currentSavedDict = generateDict(chatRoom['MemberList'], chatRoomName)
 
 			saveData(currentSavedDict)
+	itchat.logout()
 			
 if __name__ == '__main__':
-
+	'''在GroupList中输入想要分析的群聊名称，输入login的参数
+		login = 'auto',会调用itchat的自动缓存登陆模式，第二次登陆无需扫码
+		适用于持续使用者
+		logn = 'single',会调用itchat单次扫码登陆模式，适合于一次使用。
+	'''
 	GroupList = ['测试','计算机网络2018']
+	introduce()
 	init()
-	mainWork(introduce(GroupList = GroupList))
+	mainWork(
+		GroupList,
+		login = 'auto'
+	)

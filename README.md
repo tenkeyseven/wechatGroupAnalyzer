@@ -63,15 +63,23 @@ analyzeData.py 用于对指定的群列表进行分析，输出群成员变化�
 
 ### 参数说明 
 
-在 getLatestData.py 中，只需要在 GroupList 列表中添加需要获取数据的群聊即可
+在 getLatestData.py 中，参数设置如下
 
 ```python
 #getLatestData.py
 if __name__ == '__main__':
-
+	'''在GroupList中输入想要分析的群聊名称，输入login的参数
+		login = 'auto',会调用itchat的自动缓存登陆模式，第二次登陆无需扫码
+		适用于持续使用者
+		logn = 'single',会调用itchat单次扫码登陆模式，适合于一次使用。
+	'''
 	GroupList = ['测试','计算机网络2018']
+	introduce()
 	init()
-	mainWork(introduce(GroupList = GroupList))
+	mainWork(
+		GroupList,
+		login = 'auto'
+	)
 ```
 
 
@@ -89,9 +97,9 @@ if __name__ == '__main__':
 	GrouppList = ['测试','计算机网络2018']
 	main(
 		GrouppList,
-		Map = False,      #True 或 默认 为开启画图
-		Cloud = False,    
-		Pie = False       
+		Map = True,      #True 或 默认 为开启画图，False为不开启
+		Cloud = True,    
+		Pie = True       
 	)
 ```
 
