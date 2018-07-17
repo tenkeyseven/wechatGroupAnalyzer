@@ -112,3 +112,14 @@ if __name__ == '__main__':
 + [pyecharts](https://github.com/pyecharts/pyecharts)
 + [itchat](https://github.com/littlecodersh/ItChat)
 + [CSDN:利用itchat接口进行微信好友数据分析](https://blog.csdn.net/alicelmx/article/details/80862340)
+
+### 其他内容
+
+---
+
+更新一些小例子
+
+#### 1.微信好友的词云图
+
+[有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/wordCloud.py)
+
