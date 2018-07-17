@@ -117,7 +117,7 @@ if __name__ == '__main__':
 
 ---
 
-更新一些小例子
+![](https://img.shields.io/badge/Tenkeyseven-(%20%E2%80%A2%CC%80%20%CF%89%20%E2%80%A2%CC%81%20)%E2%9C%A7-green.svg)一些小例子
 
 #### 1.微信好友的词云图
 
