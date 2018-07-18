@@ -34,7 +34,7 @@ for friend in myFriendsList:
 tagsList = signatureCounter.most_common(200)  #选出分词后词频最高的200个词
 
 wordCloud = WordCloud('你的微信好友签名云图',width=1200, height=600, title_pos='center')  #生成一个词云图对象，用于绘制词云图，在这里设置标题、高度宽度和位置
-attr,value = wordCloud.cast(tagsList)
+attr, value = wordCloud.cast(tagsList)
 '''利用pyecharts的cast方法将字典列表转换成两个列表用于绘图
    例：
        tagsList = [{'周一':3},{'周二':2},{'周三':1}]
