@@ -134,5 +134,5 @@ if __name__ == '__main__':
 
 运行 bot.py
 
-[有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/bot.py)
+[bot.py的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/bot.py)
 
