@@ -38,7 +38,8 @@ attr, value = pie.cast(sexCounter)
 '''
 pie.add(
 	'',attr,value,
-       legend_orient = 'vertical', # 图例是否垂直
-       legend_pos = 'left' 	
+	is_label_show = True,
+    legend_orient = 'vertical', # 图例是否垂直
+    legend_pos = 'left' 	
 )
 pie.render('./你的微信好友性别比例图.html') # 绘图渲染
