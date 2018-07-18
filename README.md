@@ -126,3 +126,13 @@ if __name__ == '__main__':
 #### 2.微信好友性别比
 
 [有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/sex.py)
+
+#### 3.图灵小机器人（不是很图灵...）
+使用：
+
+`pip install itchat`
+
+运行 bot.py
+
+[有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/bot.py)
+
