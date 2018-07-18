@@ -123,3 +123,6 @@ if __name__ == '__main__':
 
 [有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/wordCloud.py)
 
+#### 2.微信好友性别比
+
+[有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/sex.py)
