@@ -121,18 +121,48 @@ if __name__ == '__main__':
 
 #### 1.微信好友的词云图
 
+**依赖库安装**
+
+`pip install itchat`
+
+`pip install pyecharts`
+
+**运行代码**
+
 [有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/wordCloud.py)
 
 #### 2.微信好友性别比
 
-[有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/sex.py)
-
-#### 3.图灵小机器人（不是很图灵...）
-使用：
+**依赖库安装**
 
 `pip install itchat`
 
-运行 bot.py
+`pip install pyecharts`
+
+**运行代码**
+
+[有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/sex.py)
+
+#### 3.图灵小机器人私戳版（不是很图灵...）
+**依赖库安装**
+
+`pip install itchat`
+
+**运行代码**
 
 [bot.py的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/bot.py)
+
+#### 4.图灵小机器人群聊版（不是那么图灵+1）
+
+**使用**
+
+运行程序，在群里@机器人并且带消息，然后机器人就会在群里自动回复你了~
+
+**依赖库安装**
+
+`pip install itchat`
+
+**运行代码**
+
+[群聊版代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/groupBot.py)
 
