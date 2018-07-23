@@ -49,7 +49,7 @@ def group_reply(msg):
 	   robot自动回复 ： @小k: 你也好呀
 	'''
 
-	# textMsg = msg['Text']
+	textMsg = msg['Text']
 	print('收到群消息：{}'.format(textMsg))
 	if msg.isAt:
 		robotHostName = '@' + myself['NickName']
