@@ -131,6 +131,8 @@ if __name__ == '__main__':
 
 [有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/wordCloud.py)
 
+
+
 #### 2.微信好友性别比
 
 **依赖库安装**
@@ -143,7 +145,31 @@ if __name__ == '__main__':
 
 [有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/sex.py)
 
-#### 3.图灵小机器人私戳版（不是很图灵...）
+
+
+#### 3.微信好友地区分布图
+
+**使用**
+
+和以上两种一样，运行后会自动在程序根目录生成.html电子图
+
+**依赖库安装**
+
+`pip install itchat`
+
+`pip install pyecharts`
+
+`pip install echarts-countries-pypkg   `（安装必要的地图
+
+**运行代码**
+
+[代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/provinceMap.py)
+
+
+
+
+
+#### 4.图灵小机器人私戳版（不是很图灵...）
 **依赖库安装**
 
 `pip install itchat`
@@ -152,7 +178,9 @@ if __name__ == '__main__':
 
 [bot.py的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/bot.py)
 
-#### 4.图灵小机器人群聊版（不是那么图灵+1）
+
+
+#### 5.图灵小机器人群聊版（不是那么图灵+1）
 
 **使用**
 
@@ -166,3 +194,18 @@ if __name__ == '__main__':
 
 [群聊版代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/groupBot.py)
 
+
+
+#### 6.非常简单的群聊文件自动下载工具
+
+**使用**
+
+运行程序，然后此程序自动下载微信群中别人发的文件。
+
+**依赖库安装**
+
+`pip install itchat`
+
+**运行代码**
+
+[代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/autoDownload.py)
