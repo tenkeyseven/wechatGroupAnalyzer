@@ -212,7 +212,7 @@ if __name__ == '__main__':
 
 
 
-#### 7.微信消息转化器v1
+#### 7.微信消息转发器v1
 
 **使用**
 
@@ -239,3 +239,31 @@ if __name__ == '__main__':
 **运行代码**
 
 [有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/transfer_single.py)
+
+
+
+#### 8.微信群报名小助手
+
+**使用**
+
+【例子】微信报名签到小工具
+
+使用：
+
+​    在微信群中，@<签到管理器>报名，即时返回签到信息
+
+例子：
+
+>   小A：@小T 报名
+
+>   小T：收到，目前报名人有
+
+> ​            1.小A
+
+**依赖库安装**
+
+`pip install itchat`
+
+**运行代码**
+
+[有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/signUp.py)
