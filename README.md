@@ -209,3 +209,26 @@ if __name__ == '__main__':
 **运行代码**
 
 [代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/autoDownload.py)
+
+
+
+#### 7.微信消息转化器v1
+
+**使用**
+
+【例】微信转发消息工具，转发指定群个人消息至另外一群
+例如：
+    --在群聊A中，小T发消息：你好
+    --在群聊B中有转发消息：及时收到来自群聊【A】，@小T的消息：你好
+使用：
+    --运行本程序即可，关闭退出即可
+说明:
+    --目前仅限于接收和转化文本消息，图片、语音、视频、文件暂时未添加功能。
+
+**依赖库安装**
+
+`pip install itchat`
+
+**运行代码**
+
+[有注释的代码](https://github.com/tenkeyseven/wechatGroupAnalyzer/blob/master/transfer_single.py)
