@@ -19,6 +19,13 @@ def transfer(msg):
     print('有群聊消息')
 
     if msg['ToUserName'] == groupID and msg['FromUserName'] == userID:
+        '''
+        此处注意：
+                如果是转化自己发出的消息到其他群应设置判断条件为
+                msg['ToUserName'] == groupID and msg['FromUserName'] == userID
+                转化发别人消息到其他群则为
+                msg['ToUserName'] == userID and msg['FromUserName'] == groupID
+        '''
         print('收到关注消息')
 
         for toGroup in toGroupList:
@@ -52,6 +59,6 @@ if __name__ == '__main__':
     '''以下可修改为
     '''
     userName = 'Tenkey'
-    groupName = '啊哈'
+    groupName = '新时代文化交流群'
     toGroupList = ['啊哈']
     main(userName,groupName,toGroupList)

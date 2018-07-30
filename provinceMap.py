@@ -24,6 +24,6 @@ myMap.add(
     is_label_show = True,
     visual_range = [0,80]
     )
-
 myMap.render('./你的微信好友地区分布图.html')
+
 
