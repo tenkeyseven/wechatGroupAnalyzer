@@ -3,7 +3,7 @@
 `python 3.6`  `itchat`  `pyecharts`  `jieba`                                 
 
 ## Update
-- 「2019/11/6」由于微信网页版登陆出现限制，此项目可能出现*无法登录*问题，相关问题移步 [littlecodersh/ItChat](https://github.com/littlecodersh/ItChat) Issue 区域查看
+- 「2019/11/6」由于微信网页版登陆出现限制，此项目可能出现**无法登录**问题，相关问题移步 [littlecodersh/ItChat](https://github.com/littlecodersh/ItChat) Issue 区域查看
 
 ##  实现功能
 
